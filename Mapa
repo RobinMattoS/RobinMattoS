@@ -1,0 +1,37 @@
+package pragram;
+
+public class Date {
+
+private Integer day;
+
+private Integer month;
+
+private Integer year;
+
+public Date(Integer day, Integer month, Integer year) {
+
+if(month<1 && month >12 ){
+
+System.out.println("Informe um mes valido.");
+
+}
+
+if(day<1 && day>31){
+
+System.out.println("Tem que ser de 1 a 31!!!");
+
+}
+
+if(year> 2020){
+
+System.out.println("Ano invalido");
+
+}
+
+if(validarData(day,month,year)){
+
+this.day = day;
+
+this.month = month;
+
+this.year = year;
